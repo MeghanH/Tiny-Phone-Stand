@@ -10,4 +10,4 @@ Thumbs.db
 
 # 3D printer specific code #
 ############################
-.gcode
+*.gcode
