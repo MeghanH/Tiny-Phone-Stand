@@ -1,7 +1,7 @@
 
 module plugSTL(){
 	scale([0.53,0.53,0.53])
-	translate([0,0,-0.81])
+	translate([-0.2,0,-0.81])
 	import("../Imports/plug.stl");
 }
     
@@ -11,7 +11,7 @@ module keyhole(){
 	}
 }
     
-module keyring(){
+module mainBody(){
 	hull(){
 		translate([32.2, 10.8, 0]) {
 			minkowski(){
@@ -26,10 +26,8 @@ module keyring(){
 	}
 }
 
-
-
 plugSTL();
 difference(){ 
-	keyring();
+	mainBody();
 	keyhole();
 }

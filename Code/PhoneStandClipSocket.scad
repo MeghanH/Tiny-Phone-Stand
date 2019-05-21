@@ -33,9 +33,9 @@ module endBody(){
 }
 
 module notch(){
-	translate([55, -10, -5]) {
+	translate([58, -10, -5]) {
 		minkowski(){
-			cube(size = [10, 20, 20], center = false);
+			cube(size = [8, 20, 20]);
 			sphere(r=1);
 		} 
 	}
@@ -57,7 +57,6 @@ rotate([0,0,180]){
 	translate([-60,-20,0]){
     
 		difference(){
-   
 			mainBody();
 			notch();
 		}
