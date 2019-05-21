@@ -1,7 +1,7 @@
-module stl(){
+module socketSTL(){
 	scale([0.53,0.53,0.53])
 	translate([25,-12.4,-1.63])
-	import("socket.stl");
+	import("../Imports/socket.stl");
 }
   
 module buckleConnector(){
@@ -52,7 +52,7 @@ module mainBody(){
 	}
 }
 
-stl();
+socketSTL();
 rotate([0,0,180]){
 	translate([-60,-20,0]){
     

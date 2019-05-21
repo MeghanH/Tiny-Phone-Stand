@@ -1,8 +1,8 @@
 
-module stl2(){
+module plugSTL(){
 	scale([0.53,0.53,0.53])
 	translate([0,0,-0.81])
-	import("plug.stl");
+	import("../Imports/plug.stl");
 }
     
 module keyhole(){
@@ -28,7 +28,7 @@ module keyring(){
 
 
 
-stl2();
+plugSTL();
 difference(){ 
 	keyring();
 	keyhole();
