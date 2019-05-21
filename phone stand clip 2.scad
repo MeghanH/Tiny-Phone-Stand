@@ -6,8 +6,8 @@ module stl2(){
     }
     
 module keyhole(){
-    translate([45,19,-4]){
-    cylinder(r=1,h=10);
+    translate([44,19,-4]){
+    cylinder(r=2.5,h=10);
     }
     }
     
@@ -25,6 +25,7 @@ module keyring(){
     }
 }
 }
+
 
 
 stl2();
